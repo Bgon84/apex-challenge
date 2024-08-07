@@ -1,0 +1,17 @@
+Mojang API Test Users
+
+NAME - ID
+
+KrisJelbring – 7125ba8b1c864508b92bb5c042ccfe2b
+
+Diamond - 5beced11657f46e28f0cb727b0354b6f
+
+Foo - 9b15dea6606e47a4a241420251703c59
+
+Bar - 14f19f5050cb44cd9f0bbe906ad59753
+
+Gold - 9a984ee9527e40d1aba4fbe70b5fb830
+
+Silver – 410e24dd018e4fb6b0212da42dc64b16
+
+

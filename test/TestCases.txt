@@ -1,0 +1,52 @@
+Test Cases
+
+
+Assumptions:
+    • Tester has cloned the apex-challenge repository on their local machine.
+    • Tester has navigated via a command terminal to the directory where the repository was cloned
+    • Tester has opened the whitelist.json file for review.
+
+
+Add User to whitelist.json:
+    1. Enter `php addUser.php` into the terminal command line 
+    2. Press Enter.
+    3. When prompted enter a valid username from TestUsers.txt found in the Test directory 
+    4. Press Enter.
+	Expected Results:
+    	 1. “User <username> Was Added Successfully” is displayed in the terminal.
+    	 2. whitelist.json will include a new entry for the enter username in the following format:     
+           {
+                  "uuid": "410e24dd018e4fb6b0212da42dc64b16",
+                   "name": "SILVER"
+           }
+
+
+Delete User from whitelist.json:
+    1. Enter `php deleteUser.php` into the terminal command line 
+    2. Press Enter.
+    3. When prompted enter a valid username or ID from TestUsers.txt found in the Test directory 
+    4. Press Enter.
+       Expected Results:
+    	1. “User <username or ID> Was Deleted Successfully” is displayed in the terminal.
+    	2. whitelist.json will no longer show the entry for the entered username or ID.
+
+
+Attempt to Add non-existing User to whitelist.json :
+    1. Enter `php addUser.php` into the terminal command line 
+    2. Press Enter.
+    3. When prompted enter a random string (e.g. “sdfsdfasdfqwefqef”)
+    4. Press Enter.
+       Expected Results:
+    	1. “Couldn't find any profile with name <name>” is displayed in the terminal.
+    	2. whitelist.json will be unchanged.
+
+
+Attempt to delete User not in whitelist.json :
+    1. Enter `php deleteUser.php` into the terminal command line 
+    2. Press Enter.
+    3. When prompted enter a valid username or ID from TestUsers.txt found in the Test directory or a random string (e.g. “sdfsdfasdfqwefqef”)
+    4. Press Enter.
+       Expected Results:
+    	1. “User <name> Was Not Found” is displayed in the terminal.
+    	2. whitelist.json will be unchanged.
+	
