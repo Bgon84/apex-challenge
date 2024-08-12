@@ -12,7 +12,7 @@ To add a user to whitelist.json simply run the following command:
 
 `php addUser.php`
 
-- You will be prompted to enter a username. 
+- You will be prompted to enter an username. 
 - Press enter after doing so. 
 - Your user will be added to whitelist.json. 
 
@@ -21,9 +21,9 @@ To delete a user from whitelist.json simply run the following command:
 
 `php deleteUser.php`
 
-- You will be prompted to enter a username or ID. 
+- You will be prompted to enter an username or ID. 
 - Press enter after doing so. 
 - Your user will be removed from whitelist.json 
 
 ## Error Log
-Should an error occur, the user will be alerted on the command line. The error will also be logged in erroLog.txt which will be created automatically upon the first error. 
+Should an error occur, the user will be alerted on the command line. The error will also be logged in errorLog.txt which will be created automatically upon the first error. 

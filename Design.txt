@@ -8,9 +8,16 @@ Technology:
 	JSON
 
 Approach:
-	For ease of use and maintainance, I will create one script for adding users and one for deleting. Since there will likely be some common functionality between the two, I will incorporate a helper functions file for each to require. 
+	For ease of use and maintainance, I will create one script for adding users and one for deleting. 
+	Since there will likely be some common functionality between the two, I will incorporate a helper 
+	functions file for each to require. 
 
-	In order to properly add a user I will need to fetch the ID from the Mojang API. I will utilize PHP’s curl operations to accomplish this. If the API responses with an ID, it will be added to the JSON file and the user will be informed that the operation was successful. If an error is returned, the user will be alerted and the error will be logged in an error log file. 
+	In order to properly add a user I will need to fetch the ID from the Mojang API. 
+	I will utilize PHP’s curl operations to accomplish this. 
+	If the API responds with an ID, it will be added to the JSON file and the user will be informed 
+	that the operation was successful. If an error is returned, the user will be alerted and the error 
+	will be logged in an error log file. 
 
-	Deleting users from the list will not require calling the Mojang API. I will simply check for the existence of the supplied username or ID and remove if found. 
+	Deleting users from the list will not require calling the Mojang API. 
+	I will simply check for the existence of the supplied username or ID and remove if found. 
 
